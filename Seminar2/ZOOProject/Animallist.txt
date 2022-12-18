@@ -1,0 +1,4 @@
+lion{nickName='Simbo', owner='Mufasa', legs=4}
+sdider{nickName='little', owner='Piter', legs=8}
+Duck{nickName='Doofy', owner='Alexandra', legs=2}
+hawk{nickName='Speedster', owner='Andrew', legs=2}
