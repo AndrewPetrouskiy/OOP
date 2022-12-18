@@ -24,6 +24,8 @@ public class Zoo {
                 '}';
     }
 
+//    определяем метод talk в котором выводяться на консоль что говорят все животные
+
     public String talk() {
         StringBuilder stringBuilder = new StringBuilder();
         for (Speakable item : getSpeakable()) {
@@ -31,6 +33,9 @@ public class Zoo {
         }
         return stringBuilder.toString();
     }
+
+//    определяем метод getSpeakable в котором мы заполняем list с тем что говорят животные и добавляем радиостанцию
+//    которое не не используется в Animal
 
     private List<Speakable> getSpeakable() {
         List<Speakable> result = new ArrayList<>();
@@ -43,6 +48,8 @@ public class Zoo {
         return result;
     }
 
+//    определяем метод getRunable которое заполняет список скоростей животных
+
     public List<Runable> getRunable() {
         List<Runable> result = new ArrayList<>();
         for (Animal item : animals) {
@@ -53,6 +60,8 @@ public class Zoo {
         return result;
     }
 
+
+//    определяем метод который показывает какое животное бегает быстрее всего
     public Integer getChampionSpeed() {
         int max = 0;
 
@@ -64,6 +73,8 @@ public class Zoo {
         return max;
     }
 
+    //    определяем метод getRunable которое заполняет список скоростей полета животных
+
     public List<Flyable> getFlyable() {
         List<Flyable> result = new ArrayList<>();
         for (Animal item : animals) {
@@ -73,6 +84,8 @@ public class Zoo {
         }
         return result;
     }
+
+    //    определяем метод который показывает какое животное летает быстрее всего
 
     public Integer getChampionFlySpeed() {
         int max = 0;

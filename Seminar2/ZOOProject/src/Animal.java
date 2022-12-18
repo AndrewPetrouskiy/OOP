@@ -1,11 +1,11 @@
 // создаем абстрактный класс Animal
 public abstract class Animal {
-//    Определяем приватные поля nickname, owner, legs
+    //    Определяем приватные поля nickname, owner, legs
     private String nickName;
     private String owner;
     private int legs;
 
-//    Определяем конструктор
+    //    Определяем конструктор
     public Animal(String nickName, String owner, int legs) {
         this.nickName = nickName;
         this.owner = owner;
@@ -25,7 +25,7 @@ public abstract class Animal {
         return legs;
     }
 
-//    определяем метод toString
+    //    определяем метод toString
     @Override
     public String toString() {
         return "{" +
@@ -34,8 +34,6 @@ public abstract class Animal {
                 ", legs=" + legs +
                 '}';
     }
-
-//    public abstract String voice();
 
 
 }

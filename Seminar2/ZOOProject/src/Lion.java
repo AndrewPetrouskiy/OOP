@@ -1,5 +1,8 @@
-// определяем класс Lion наследуемый от Animal
-public class Lion extends Animal implements  Speakable , Runable{
+// определяем класс Lion наследуемый от Animal и использующий интерфейсы Speakable , Runable
+
+public class Lion extends Animal implements Speakable, Runable {
+
+    // определяем конструктор
     public Lion(String nickName, String owner, int legs) {
         super(nickName, owner, legs);
     }
@@ -9,6 +12,7 @@ public class Lion extends Animal implements  Speakable , Runable{
 //        return "Rrr - Rrr";
 //    }
 
+    //    переопределяем методы runSpeed, speak and toString
     @Override
     public String speak() {
         return "Rrr - Rrr";
