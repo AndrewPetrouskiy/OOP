@@ -15,7 +15,7 @@ public class Node<E> {
 
 
     void  add(E name) {
-        if (isNext() == true) {
+        if (isNext()) {
             next.add(name);
         } else {
             next = new Node<>(name);
@@ -30,40 +30,4 @@ public class Node<E> {
             return next !=null;
         }
     }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//}
+

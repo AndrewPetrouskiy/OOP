@@ -29,39 +29,6 @@ class LinkList<E> implements Iterable<E> {
     }
 
 
-//    private class Node<E> {
-//        private E name;
-//
-//        private Node<E> next = null;
-//
-//        Node() {
-//        }
-//
-//        Node(E name) {
-//            set(name);
-//        }
-//
-//        void set(E name) {
-//            this.name = name;
-//        }
-//
-//        void add(E name) {
-//            if (isNext() == true) {
-//                next.add(name);
-//            } else {
-//                next = new Node<E>(name);
-//            }
-//        }
-//
-//        public E get() {
-//            return name;
-//        }
-//
-//        public boolean isNext() {
-//            return next != null;
-//        }
-//    }
-
     private class LinkIterator implements Iterator<E> {
         private Node<E> thisis;
 
@@ -79,7 +46,7 @@ class LinkList<E> implements Iterable<E> {
 
         @Override
         public E next() {
-            if (isFirst == true) isFirst = false;
+            if (isFirst) isFirst = false;
             else thisis = thisis.next;
             return thisis.get();
         }
