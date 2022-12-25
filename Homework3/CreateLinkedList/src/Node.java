@@ -1,27 +1,27 @@
-public class Node<E> {
-    private E name;
+public class Node<User> {
+    private User name;
 
-    public Node<E> next = null;
+    public Node<User> next = null;
 
     Node(){}
 
-    Node(E name){
+    Node(User name){
         set(name);
     }
 
-    void set(E name){
+    void set(User name){
         this.name = name;
     }
 
 
-    void  add(E name) {
+    void  add(User name) {
         if (isNext()) {
             next.add(name);
         } else {
             next = new Node<>(name);
         }
     }
-        E get(){
+    User get(){
             return name;
         }
 

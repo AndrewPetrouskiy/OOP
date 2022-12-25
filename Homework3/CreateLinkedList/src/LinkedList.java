@@ -1,20 +1,20 @@
 
 import java.util.Iterator;
 
-class LinkList<E> implements Iterable<E> {
-    private Node<E> node = null;
+class LinkList<User> implements Iterable<User> {
+    private Node<User> node = null;
 
     private int count = 0;
 
     public LinkList() {
-        node = new Node<E>();
+        node = new Node<User>();
     }
 
     public int size() {
         return count;
     }
 
-    public void add(E name) {
+    public void add(User name) {
         if (count == 0) {
             node.set(name);
         } else {
@@ -24,17 +24,17 @@ class LinkList<E> implements Iterable<E> {
     }
 
     @Override
-    public Iterator<E> iterator() {
+    public Iterator<User> iterator() {
         return new LinkIterator(node);
     }
 
 
-    private class LinkIterator implements Iterator<E> {
-        private Node<E> thisis;
+    private class LinkIterator implements Iterator<User> {
+        private Node<User> thisis;
 
         private boolean isFirst = true;
 
-        LinkIterator(Node<E> node) {
+        LinkIterator(Node<User> node) {
             thisis = node;
         }
 
@@ -45,7 +45,7 @@ class LinkList<E> implements Iterable<E> {
         }
 
         @Override
-        public E next() {
+        public User next() {
             if (isFirst) isFirst = false;
             else thisis = thisis.next;
             return thisis.get();

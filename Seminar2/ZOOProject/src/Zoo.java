@@ -3,6 +3,7 @@ import java.util.List;
 
 // определяем класс Zoo
 public class Zoo {
+    
     public List<Animal> getAnimals() {
         return animals;
     }
